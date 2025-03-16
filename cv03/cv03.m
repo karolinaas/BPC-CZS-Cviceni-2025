@@ -2,6 +2,7 @@ clc % smaže konzoli
 close all % zavře všechny grafy
 clear all % smaže všechny proměnné
 
+%% Demonstrace rozdílu mezi spojitým a diskrétním signálem
 duration = 1; % trvání
 A = 1; % amplituda
 phi = 0; % počáteční fáze
