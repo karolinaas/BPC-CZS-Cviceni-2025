@@ -4,7 +4,7 @@ function [output_row_vector] = add_zeros(input_row_vector, num_of_zeros)
     %   vector to be padded with. Returns a vector padded with zeros.
     %
     %   For more information, see <a href="matlab: 
-    %   web('https://www.mathworks.com')">the MathWorks Web site</a>.
+    %   web('https://karolinaas.github.io/FEKT-notes/BPC-CZS/Dokumentace/#add_zeros')">the online documentation</a>.
     %
     %   See also LOAD_MUSIC.
 
