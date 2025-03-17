@@ -32,3 +32,22 @@ legend(["Spojitý signál", "Vzorky", "Diskrétní signál"], ...
 xlim([0, 1]);
 ylim([-1, 1]);
 grid on;
+
+%% Vyzkoušejte funkci pro kvantování signálu na načteném audio souboru
+% pomocí audioread) a výsledek kvantizace si poslechněte.
+
+clc % smaže konzoli
+close all % zavře všechny grafy
+clear all % smaže všechny proměnné
+
+[y,Fs] = audioread("audio_files\czs\zv_cz.wav");
+
+player= audioplayer(y, Fs);
+play(player);
+
+%%
+
+[y_quantized, ~] = quantize_signal(y, 4, "mid_tread");
+
+player_quantized = audioplayer(y_quantized, Fs);
+play(player_quantized);

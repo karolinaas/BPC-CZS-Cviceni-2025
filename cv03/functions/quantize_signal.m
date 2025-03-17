@@ -7,7 +7,7 @@ function [y_quantized, quant_levels] = quantize_signal(x, B, quant_type)
     %   For more information, see <a href="matlab: 
     %   web('https://karolinaas.github.io/FEKT-notes/BPC-CZS/Dokumentace/#quantize_signal')">the online documentation</a>.
     %
-    %   See also GENERATE_SINE.
+    %   See also GENERATE_SINE, CALCULATE_SQNR.
     
     % Calculate number of quantization levels
     L = 2 ^ B;

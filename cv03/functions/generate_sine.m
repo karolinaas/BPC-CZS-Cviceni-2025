@@ -5,9 +5,9 @@ function [t, y] = generate_sine(duration, A, phi, fs, f)
     %   Returns signal timescale and sample data.
     %
     %   For more information, see <a href="matlab: 
-    %   web('https://karolinaas.github.io/FEKT-notes/BPC-CZS/Dokumentace/#generate_sine')">the online documentation</a>.
+    %   web('https://karolinaas.github.io/FEKT-notes/BPC-CZS/Dokumentace/#calculate_sqnr')">the online documentation</a>.
     %
-    %   See also QUANTIZE_SIGNAL.
+    %   See also QUANTIZE_SIGNAL, CALCULATE_SQNR.
 
     t = (0:(fs * duration) - 1) / fs;
     y = A * sin(2 * pi * f * t + phi);
